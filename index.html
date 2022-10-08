@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather 24/7</title>
+    <!-- <logo part>  -->
+        <link rel="icon" href="Images/logo.png" type="x-icon">
+    <!-- <CSS LINKER> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+           <div class="search">
+            <input type="text" name="search-bar" class="search-bar" id="city_value" placeholder="Enter Location To Search">
+            <button class="search-btn" onclick="fetchwthr();">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+           </div>
+           <div class="info">
+               <div class="temp">Weather in:<div class="temp_city" id="temp_city"></div></div>
+               <div class="temper" id="temper"></div>
+               <div class="img-box">
+                <img src= "" alt="" id="icon" />
+                <div id="desc"></div>
+              </div>
+               <div class="timezone" id="timezone">
+                <div class="title">Time-Zone:<div class="tz" id="tz"></div></div>
+               </div>
+               <div class="humid">
+                <div class="title">Humidity:<div class="hum" id="hum"></div></div>
+               </div>
+               <div class="wind_speed">
+                <div class="title">WindSpeed:<div class="ws" id="ws"></div></div>
+               </div>
+           </div>
+        </div>
+    </div>  
+    
+<div class="div">
+    <h3><a href="https://www.github.com/connect-raj">@connect-raj</a>   .All right reserved.   202X.</h3>
+</div>
+    <!-- <p>JAVASCRIPT LINKER</p> -->
+    <script src="script.js"></script>
+</body>
+</html>
